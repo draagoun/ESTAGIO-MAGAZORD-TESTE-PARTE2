@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(0.25turn, #57AEFF, #0065b8, #57AEFF);
+    max-height: 50px;
+    height: 50px;
+    cursor: default;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    background: none;
+}
+
+a:after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0%;
+    left: 0px;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+img {
+    background: none;
+}
+
+.candidatos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.candidato1 , .candidato2 , .candidato3 {
+    border: #0099ff solid 1px;
+    border-radius: 0px 20px 0px 20px;
+    width: 300px;
+    height: 100%;
+    margin: 100px;
+    color: #585858;
+    transition: 0.3s;
+    background: white;
+}
+
+.candidato1:hover {
+    border: #006eff solid 2px;
+    color: #000;
+    width: 400px;
+    font-size: 18px;
+}
+
+.candidato2:hover {
+    border: #006eff solid 2px;
+    color: #000;
+    width: 400px;
+    font-size: 18px;
+}
+
+.candidato3:hover {
+    border: #006eff solid 2px;
+    color: #000;
+    width: 400px;
+    font-size: 18px;
+}
+
+.link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #57AEFF;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.link:hover {
+    background: #0065b8;
+}
+
+p#quests {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 20px 20px;
+    padding: 0px 0px;
+    background: none;
+}
+
+p#answrs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding-bottom: 10px;
+}
+
+.pic {
+    border-radius: 50%;
+    width: 40%;
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+.infs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
